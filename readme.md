@@ -1,7 +1,7 @@
 # Frontend assessment project
 
-    ![Alt text](./public/images/desktop-view.png?raw=true "App")
-    ![Alt text](./public/images/mobile-view.png?raw=true "App")
+![mobile-view](https://github.com/Christopher-Cudiamat/frontend-assessment/assets/52795465/e448e085-57d1-427d-8fbf-f1f396712663)
+![desktop-view](https://github.com/Christopher-Cudiamat/frontend-assessment/assets/52795465/723a166b-1f67-4af8-8623-1f9b521e0d8f)
 
 # Next.js Starter Project
 
