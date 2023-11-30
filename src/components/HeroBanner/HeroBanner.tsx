@@ -28,6 +28,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
         src={windowSize.width > desktopScreenSize ? desktopImage : mobileImage}
         alt={altText}
         fill
+        priority={true}
         className="hero-banner__image"
       />
       <div className="hero-banner__overlay" />

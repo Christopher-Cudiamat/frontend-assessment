@@ -6,24 +6,20 @@
   justify-content: center;
   align-items: center;
   color: white;
+  overflow: hidden;
 }
 
 .hero-banner__image {
   position: absolute;
-  inset: 0;
   object-fit: cover;
   width: 100%;
-  height: auto;
-
-  @media only screen and (min-width: 1024px) {
-    transform: scale(1.9);
-  }
+  height: 100%;
 }
 
 .hero-banner__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-banner__title-container {
@@ -37,8 +33,9 @@
 .hero-banner__title {
   font-size: 5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 992px) {
     font-size: 7rem;
   }
 }
@@ -47,7 +44,7 @@
   font-size: 2rem;
   font-weight: 400;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 992px) {
     font-size: 3rem;
   }
 }
