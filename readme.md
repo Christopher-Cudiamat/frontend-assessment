@@ -1,8 +1,12 @@
 # Frontend assessment project
 
 ![mobile-view](https://github.com/Christopher-Cudiamat/frontend-assessment/assets/52795465/e448e085-57d1-427d-8fbf-f1f396712663)
+
 ![desktop-view](https://github.com/Christopher-Cudiamat/frontend-assessment/assets/52795465/723a166b-1f67-4af8-8623-1f9b521e0d8f)
 
+#Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.
+    Answer: The trick is in the + + 'a', specifically, the + 'a'.There’s no number between the two plus signs. The browser attempts to add nothing to 'a', which returns NaN or Not a Number. The final part of the trick is the lowerCase() method, which turns the capital N’s from NaN into lowercase that is why the result of the operation will be "banana".
+    
 # Next.js Starter Project
 
 This is a starter project for React that uses Next.js.
