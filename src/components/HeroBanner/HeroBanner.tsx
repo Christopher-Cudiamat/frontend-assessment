@@ -20,7 +20,7 @@ const HeroBanner = ({
   subtitle,
 }: HeroBannerProps) => {
   const windowSize = useWindowSize();
-  const desktopScreenSize = 1024;
+  const desktopScreenSize = 992;
 
   return (
     <section className="hero-banner">

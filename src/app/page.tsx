@@ -6,6 +6,7 @@ import CardsSection from "@/components/CardsSection/CardsSection";
 import Accordion from "@/components/Accordion/Accordion";
 import Tabs from "@/components/Tabs/Tabs";
 import Container from "react-bootstrap/Container";
+import "./styles.css";
 
 const Home = () => {
   const mobileImage =
@@ -23,7 +24,10 @@ const Home = () => {
         subtitle="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"
       />
       <CardsSection items={cards} />
-      <Container className="pb-5">
+      <Container
+        as="section"
+        className="list-section"
+      >
         <Accordion
           items={data}
           className="d-block d-lg-none"
