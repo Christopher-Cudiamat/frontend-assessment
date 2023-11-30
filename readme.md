@@ -25,13 +25,6 @@ To get started, just clone the repository and run `npm install && npm run dev`:
 
 ## `npm run lint`
 
-This command is used to run a code linter (e.g., ESLint) on your JavaScript or TypeScript codebase.
-Thi linter checks your code for style and formatting issues, as well as potential programming errors.
-When you run npm run lint, the linter will report any issues it finds in your code, but it won't automatically fix them.
-It identifies and report problems, so you can manually address them.
-
-## `npm run lint`
-
 This command runs the code linter in a "fix" mode.
 
 ## `npm run format:fix`
