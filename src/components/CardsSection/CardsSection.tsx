@@ -5,14 +5,12 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Row, Col, Container } from "react-bootstrap";
 import "./styles.css";
-
 interface Item {
   id: string;
   image: string;
   text: string;
   link: string;
 }
-
 interface CardsSectionProps {
   items: Item[];
 }

@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import "./styles.css";
 import useWindowSize from "@/hooks/useWindowSize";
-
 interface HeroBannerProps {
   desktopImage: string;
   mobileImage: string;
@@ -12,13 +11,14 @@ interface HeroBannerProps {
   title: string;
   subtitle: string;
 }
-const HeroBanner: React.FC<HeroBannerProps> = ({
+
+const HeroBanner = ({
   desktopImage,
   mobileImage,
   altText,
   title,
   subtitle,
-}) => {
+}: HeroBannerProps) => {
   const windowSize = useWindowSize();
   const desktopScreenSize = 1024;
 
