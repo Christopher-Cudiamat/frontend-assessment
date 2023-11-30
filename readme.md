@@ -1,45 +1,39 @@
-## Introduction
+# Frontend assessment project
 
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines).
+    ![Alt text](./public/images/desktop-view.png?raw=true "App")
+    ![Alt text](./public/images/mobile-view.png?raw=true "App")
 
-## Exercise 1
+# Next.js Starter Project
 
-Build a responsive page based on the designs.
+This is a starter project for React that uses Next.js.
 
-##### Requirements
+- React-Bootstrap library integration to create a more seamless front-end development experience and to have more control over the appearance and function of the components in this project.
+- Uses TypeScript that extends JavaScript to enable type safety in the project.
+- Uses BEM methodology for easy to read class names.
 
-1. Match the designs exactly.
-2. Needs to be responsive.
+## About
 
-##### Designs
+A Frontend assesment project.
 
-- exercise1-desktop.png
-- exercise1-mobile.png
+## Running locally in development mode
 
-##### Assets
+To get started, just clone the repository and run `npm install && npm run dev`:
 
-- Desktop banner - https://via.placeholder.com/1920x650
-- Mobile banner - https://via.placeholder.com/600x600
-- Content images - https://via.placeholder.com/400x300
+    git clone https://github.com/Christopher-Cudiamat/frontend-assessment.git
+    npm install
+    npm run dev
 
-## Exercise 2
+## `npm run lint`
 
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+This command is used to run a code linter (e.g., ESLint) on your JavaScript or TypeScript codebase.
+Thi linter checks your code for style and formatting issues, as well as potential programming errors.
+When you run npm run lint, the linter will report any issues it finds in your code, but it won't automatically fix them.
+It identifies and report problems, so you can manually address them.
 
-##### Requirements
+## `npm run lint`
 
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+This command runs the code linter in a "fix" mode.
 
-###### Bonus points
+## `npm run format:fix`
 
-- Improve the user experience with meaningful animations/transitions.
-- Design and styling.
-- Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-## Submission
-
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+This formats the code using the Prettier code formatter.
