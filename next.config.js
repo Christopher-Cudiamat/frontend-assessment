@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["fastly.picsum.photos"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "fastly.picsum.photos",
+      },
+    ],
   },
 };
 
