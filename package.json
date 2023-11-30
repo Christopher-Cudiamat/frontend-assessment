@@ -11,14 +11,17 @@
     "format:fix": "prettier --write --list-different ."
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
+    "@heroicons/react": "^2.0.18",
+    "bootstrap": "^5.3.2",
+    "dompurify": "^3.0.6",
     "next": "14.0.3",
     "normalize.css": "^8.0.1",
-    "bootstrap": "^5.3.2",
-    "react-bootstrap": "^2.9.1"
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-bootstrap": "^0.32.35",
