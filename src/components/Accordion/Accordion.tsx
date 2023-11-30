@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useContext } from "react";
-import DOMPurify from "dompurify";
 import {
   AccordionContext,
   useAccordionButton,
@@ -23,6 +22,7 @@ interface Item {
 
 interface AccordionProps {
   items: Item[];
+  className?: string;
 }
 
 const ContextAwareToggle = ({
@@ -49,11 +49,11 @@ const ContextAwareToggle = ({
   );
 };
 
-const Accordion = ({ items }: AccordionProps) => {
+const Accordion = ({ items, className = "" }: AccordionProps) => {
   const [defaultActiveItem] = items;
 
   return (
-    <Container>
+    <Container className={className}>
       <BootstrapAccordion
         defaultActiveKey={defaultActiveItem.title}
         className="accordion"
@@ -63,10 +63,13 @@ const Accordion = ({ items }: AccordionProps) => {
             <ContextAwareToggle eventKey={item.title}>
               {item.title}
             </ContextAwareToggle>
-            <BootstrapAccordion.Collapse eventKey={item.title}>
+            <BootstrapAccordion.Collapse
+              eventKey={item.title}
+              className="accordion__collapse "
+            >
               <div
                 dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(item.content),
+                  __html: item.content,
                 }}
                 className="accordion__body"
               />

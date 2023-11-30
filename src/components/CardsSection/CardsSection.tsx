@@ -40,7 +40,7 @@ const CardsSection = ({ items }: CardsSectionProps) => {
                   className="cards-section__card-image"
                 />
               </div>
-              <Card.Body className="cards-section__card-container">
+              <Card.Body className="cards-section__card-body">
                 <Card.Text className="cards-section__card-text">
                   {item.text}
                 </Card.Text>

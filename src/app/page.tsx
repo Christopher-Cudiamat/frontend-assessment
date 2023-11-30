@@ -4,6 +4,8 @@ import data from "../../data/data.json";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import CardsSection from "@/components/CardsSection/CardsSection";
 import Accordion from "@/components/Accordion/Accordion";
+import Tabs from "@/components/Tabs/Tabs";
+import Container from "react-bootstrap/Container";
 
 const Home = () => {
   const mobileImage =
@@ -21,7 +23,16 @@ const Home = () => {
         subtitle="Lorem Ipsum dolor sit amet, consectetur adipiscing elit"
       />
       <CardsSection items={cards} />
-      <Accordion items={data} />
+      <Container className="pb-5">
+        <Accordion
+          items={data}
+          className="d-block d-lg-none"
+        />
+        <Tabs
+          items={data}
+          className="d-none d-lg-block"
+        />
+      </Container>
     </React.Fragment>
   );
 };
